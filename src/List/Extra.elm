@@ -1565,7 +1565,7 @@ splitWhen predicate list =
         |> Maybe.map (\i -> splitAt i list)
 
 
-{-| Split a list into sublists, starting with each element that satisfies a predicate.
+{-| Split a list into sublists, starting a new sublist with each element that satisfies a predicate.
 
     splitOn ((==) 3) [ 1, 2, 3, 4, 5 ]
     --> [ [ 1, 2 ], [ 3, 4, 5 ] ]
